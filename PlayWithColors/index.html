@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+    <div class="header">
+    <div id="img"><img src="images.png" height="50px"></div>
+    <span id="mainheading">Colors PlayGround</span>
+    <div class="giticon"><i class="fa-brands fa-github" style="color:#e7e0e3; font-size:2rem;"></i></div>
+    </div>
+    <div class="uppermainHeading"><span>Your color space</span></div>
+    <div class="box">
+
+    <div class="random">
+        <h2>Get your random color</h2>
+        <div class="ColorBox">
+            <h3 id="heading">Generated color</h3>
+            <center><button id="btn">Generate color</button></center>
+        </div>
+    </div>
+
+
+    <div class="gradient">
+        <div class="container">
+            <h2>Generate gradient Color</h2>
+            <div class="inputbox"> 
+            <div><input type="text" value="" class="first" placeholder="Ex:#2D1DED"></div>
+            <div><input class="second" type="text" value="" placeholder="Ex:#EB122B"></div>
+            </div>
+            <div id="btndiv"><button id="btn2"><pre>&#128640;Generate</pre></button></div>
+            
+            <div class="outputBox">
+                <div class="outputinner">
+                  <div><i class="fa-solid fa-clone copybutton" onclick="copyContent()"></i></div>
+                  <div class="output">background-image:linear-gradient(to right, #2D1DED, #EB122B);</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
