@@ -1,0 +1,102 @@
+body{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+.main{
+    display: flex;
+    justify-content: center;
+    max-width:500px;
+    margin:auto;
+    margin-top:3rem;
+    /* border: 1px solid rgb(181, 173, 184); */
+    /* background: rgb(222, 217, 224); */
+}
+.box{
+    width:150px;
+    height: 150px;
+    margin:1rem;
+    border-radius: 10%;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+.one{
+   background: #f64c71;
+   border:3.5px solid #ca4965;
+}
+.two{
+   background:#55bae9;
+   border:3.5px solid #5c83b4;
+}
+.three{
+   background:#f1b51d;
+   border: 3.5px solid #b99e23;
+}
+.four{
+   background:#df5cd2;
+   border:3.5px solid #a94380;
+}
+@media (max-width:500px) {
+    .box{
+        width:100px;
+        height: 100px;
+        margin:1rem;
+        border-radius: 10%;
+    }
+}
+.flashC{
+    background: white;
+    border: 3px solid white;
+}
+.flashU{
+    background: rgb(28, 31, 30);
+    border:3px solid rgb(29, 30, 30);
+}
+.flashWrong{
+    background: rgb(222, 8, 18);
+}
+.row{
+    display:flex;
+    justify-content: center;  
+}
+.outer{
+    background:rgb(241, 198, 232);
+    width:40%;
+    margin:auto;
+    margin-top:2rem;
+    color:#1ddbdb;
+    padding-bottom:.3rem;
+    border-radius: 9px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+@media (max-width:1200px) {
+    .outer{
+        width:95%;
+    }
+}
+.computerButtonouter{
+    width:24%;
+    padding:0rem 1rem 0rem 0rem;
+    margin:auto;
+    margin-top:2.8rem;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content:space-between;
+}
+@media (max-width:1200px) {
+    .computerButtonouter{
+        width:70%;
+    }
+}
+.computerButton,.quit{
+    background: rgb(170, 38, 218);
+    padding:1rem 1.5rem;
+    border-radius:25px;
+    color:#1ddbdb;
+    font-family:'Young Serif', serif;
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+    transition: all ease-in .2s;
+}
+.computerButton:hover,.quit:hover{
+     background: #f083e3;
+     color:rgb(63, 129, 222);
+}

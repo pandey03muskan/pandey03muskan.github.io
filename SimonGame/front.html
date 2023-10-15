@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Young+Serif&display=swap" rel="stylesheet">
+    <style>
+        .outerOfRulesPage{
+            min-height:400px;
+            width:50%;
+            margin:auto;
+            margin-top:4rem;
+            padding-bottom:1rem;
+            background:rgb(241, 198, 232);
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+            border: 1px solid #39a1a1;
+            border-left:30px solid #43c6c6;
+            border-radius:20px;
+            /* border:2px solid rgb(196, 188, 188); */
+            /* box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset; */
+            /* box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px; */
+        }
+        @media (max-width:1300px) {
+            .outerOfRulesPage{
+                width:95%;
+            }
+            .rule{
+                font-size:0.8rem;
+                margin-left:0rem;
+            }
+            .num{
+                padding:0.2rem 0.5rem;
+                margin-left:.5rem;
+            }
+
+        }
+        #heading{
+            margin-left:2rem;
+            color:#43c6c6;
+            font-family:'Young Serif', serif;
+        }
+        .num{
+            background:#43c6c6;
+            padding:.4rem 1rem;
+            border-radius: 50%;
+            width:2%;
+            margin-left:1rem;
+            margin-top:1.8rem;
+            color:rgb(170, 38, 218);
+            font-size:1.5rem;
+            font-weight: bold;
+        }
+        .rule{
+            margin-top:1.9rem;
+            margin-left:.5rem;
+            color:rgb(170, 38, 218);
+            font-family:'Young Serif', serif;
+        }
+        .button{
+            padding:1.5rem 3rem;
+            background:rgb(170, 38, 218);
+            margin-left:40%;
+            border-radius: 25px;
+            color:#43c6c6;
+            border:2px solid rgb(170, 38, 218);
+            font-size:1rem;
+            font-weight: bold;
+            font-family:'Young Serif', serif;
+            margin-top:2rem;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  }
+    </style>
+</head>
+<body>
+    <div class="outerOfRulesPage">
+        <h2 id="heading">How to play<img src="face.png" height="90px"></h2>
+        <div class="rules">
+            <div>
+            <div class="rule"><span class="num">1</span> Press start to begin the game</div><br>
+            </div>
+            <div>
+            <div class="rule"><span class="num">2</span>One out of four buttons will flash</div><br>
+            </div>
+            <div>
+           <div class="rule"><span class="num">3</span>Press on that button</div><br>
+            </div>
+            <div>
+           <div class="rule" id="rule4"> <span class="num" style="line-height:3rem;">4</span>
+                
+                    The game will increase it's level and you have to press the previous 
+                   buttons and the
+                   button flashed right now.
+                
+                </div>
+            </div>
+           <a href="index.html"><button class="button">Let's play</button></a>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
