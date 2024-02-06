@@ -81,8 +81,24 @@
     background:white;
     border-radius: 9px;
 }
+.copybutton1{
+    font-size: 1rem;
+    color:#3b747d;
+    transition:all ease-in-out .2s;
+    
+}
+.copybutton1:hover{
+    transform: scale(1.1);
+}
+.Copy_color{
+    min-height:50px;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: center;
+}
 .ColorBox{
     width:90%;
+    min-height:200px;
     margin:auto;
     margin-top:3rem;
     box-shadow: 2px 2px 9px grey;
@@ -91,6 +107,11 @@
     border-radius: 9px;
     padding:1rem;
 }
+/* @media (min-width:1000px) {
+    .ColorBox{
+        min-height:200px;
+    }
+} */
 @media (min-width:1000px) {
 .ColorBox{
         width:80%;
@@ -135,6 +156,25 @@ h2{
     padding:2rem 1.5rem;
     margin-bottom:1rem;
     border-radius: 9px;
+}
+.Orientation{
+    width:30%;
+    margin:auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    transition: all ease-in 0.5s;
+}
+.Orientationbox{
+    padding:.2rem .5rem;
+    border-radius: 50%;
+    /* border:1px solid white; */
+}
+/* .Orientationbox:hover{
+  transform: scale(1.2);
+} */
+.icon{
+    font-size:.8rem;
 }
 .inputbox{
     display: flex;
@@ -181,7 +221,7 @@ input{
 }
 .outputinner{
     box-shadow: 2px 2px 9px rgb(224, 220, 220);
-    width:80%;
+    width:90%;
     margin: auto;
     border-radius: 5px;  
     border-left:5px solid white;
